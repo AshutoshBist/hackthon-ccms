@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Normal Organizer Example</title>
+		<link href="../calendarorganizer.min.css" rel="stylesheet">
+	</head>
+<body>
+		<div id="calendarContainer">
+      <style>
+        .cjslib-day-indicator { color: #ffa000; background-color: #ffa000; }
+        .cjslib-indicator-type-numeric { color: #ffffff; }
+         .cjslib-day.cjslib-day-today >
+          .cjslib-day-num { border-color: #ffa000 !important; }
+    </style>
+    <div class="cjslib-calendar cjslib-size-small">
+      <div class="cjslib-year" style="background-color: rgb(255, 160, 0); color: rgb(255, 236, 179);">
+        <div id="calendarContainer-year-back">
+          <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+            <path fill="#ffecb3" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path>
+          </svg>
+        </div>
+        <span id="calendarContainer-year">2020</span>
+        <div id="calendarContainer-year-next">
+          <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+            <path fill="#ffecb3" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="cjslib-month" style="background-color: rgb(255, 193, 7); color: rgb(255, 255, 255);">
+        <div id="calendarContainer-month-back"><svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+          <path fill="#ffecb3" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path>
+        </svg>
+      </div>
+      <span id="calendarContainer-month">January</span>
+        <div id="calendarContainer-month-next">
+          <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+            <path fill="#ffecb3" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="cjslib-labels" style="background-color: rgb(255, 160, 0); color: rgb(255, 236, 179);">
+        <span id="calendarContainer-label-1">Wed</span>
+        <span id="calendarContainer-label-2">Thu</span>
+        <span id="calendarContainer-label-3">Fri</span>
+        <span id="calendarContainer-label-4">Sat</span>
+        <span id="calendarContainer-label-5">Sun</span>
+        <span id="calendarContainer-label-6">Mon</span>
+        <span id="calendarContainer-label-7">Tue</span>
+      </div>
+      <div class="cjslib-days">
+        <div class="cjslib-row">
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-1">
+          <label class="calendarContainer cjslib-day cjslib-day-listed cjslib-day-today" for="calendarContainer-day-radio-1" id="calendarContainer-day-1">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-1">1</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-1"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-2">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-2" id="calendarContainer-day-2">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-2">2</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-2"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-3">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-3" id="calendarContainer-day-3">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-3">3</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-3"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-4">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-4" id="calendarContainer-day-4">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-4">4</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-4">1</span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-5">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-5" id="calendarContainer-day-5">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-5">5</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-5"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-6">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-6" id="calendarContainer-day-6">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-6">6</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-6"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-7">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-7" id="calendarContainer-day-7">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-7">7</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-7">1</span>
+          </label>
+        </div>
+        <div class="cjslib-row">
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-8">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-8" id="calendarContainer-day-8">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-8">8</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-8"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-9">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-9" id="calendarContainer-day-9">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-9">9</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-9"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-10">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-10" id="calendarContainer-day-10">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-10">10</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-10"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-11">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-11" id="calendarContainer-day-11">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-11">11</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-11"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-12">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-12" id="calendarContainer-day-12">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-12">12</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-12"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-13">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-13" id="calendarContainer-day-13">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-13">13</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-13"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-14">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-14" id="calendarContainer-day-14">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-14">14</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-14"></span>
+          </label>
+        </div>
+        <div class="cjslib-row">
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-15">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-15" id="calendarContainer-day-15">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-15">15</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-15"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-16">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-16" id="calendarContainer-day-16">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-16">16</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-16">1</span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-17">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-17" id="calendarContainer-day-17">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-17">17</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-17"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-18">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-18" id="calendarContainer-day-18">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-18">18</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-18"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-19">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-19" id="calendarContainer-day-19">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-19">19</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-19"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-20">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-20" id="calendarContainer-day-20">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-20">20</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-20">2</span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-21">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-21" id="calendarContainer-day-21">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-21">21</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-21"></span>
+          </label>
+        </div>
+        <div class="cjslib-row">
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-22">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-22" id="calendarContainer-day-22">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-22">22</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-22"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-23">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-23" id="calendarContainer-day-23">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-23">23</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-23"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-24">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-24" id="calendarContainer-day-24">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-24">24</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-24"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-25">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-25" id="calendarContainer-day-25">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-25">25</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-25"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-26">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-26" id="calendarContainer-day-26">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-26">26</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-26"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-27">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-27" id="calendarContainer-day-27">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-27">27</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-27"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-28">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-28" id="calendarContainer-day-28">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-28">28</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-28"></span>
+          </label>
+        </div>
+        <div class="cjslib-row">
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-29">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-29" id="calendarContainer-day-29">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-29">29</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-29"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-30">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-30" id="calendarContainer-day-30">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-30">30</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-30"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-31">
+          <label class="calendarContainer cjslib-day cjslib-day-listed" for="calendarContainer-day-radio-31" id="calendarContainer-day-31">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-31">31</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-31"></span>
+          </label>
+          <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-32">
+          <label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-32" id="calendarContainer-day-32">
+            <span class="cjslib-day-num" id="calendarContainer-day-num-32">1</span>
+            <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-32"></span>
+            </label>
+            <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-33">
+            <label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-33" id="calendarContainer-day-33">
+              <span class="cjslib-day-num" id="calendarContainer-day-num-33">2</span>
+              <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-33"></span>
+            </label>
+            <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-34">
+              <label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-34" id="calendarContainer-day-34">
+                <span class="cjslib-day-num" id="calendarContainer-day-num-34">3</span>
+                <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-34"></span></label>
+              <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-35">
+              <label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-35" id="calendarContainer-day-35">
+                <span class="cjslib-day-num" id="calendarContainer-day-num-35">4</span>
+                <span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-35"></span>
+              </label>
+            </div>
+            <div class="cjslib-row">
+              <input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-36">
+							<label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-36" id="calendarContainer-day-36">
+								<span class="cjslib-day-num" id="calendarContainer-day-num-36">5</span>
+								<span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-36"></span>
+							</label>
+							<input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-37">
+							<label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-37" id="calendarContainer-day-37">
+								<span class="cjslib-day-num" id="calendarContainer-day-num-37">6</span>
+								<span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-37"></span>
+								</label>
+								<input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-38">
+								<label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-38" id="calendarContainer-day-38">
+									<span class="cjslib-day-num" id="calendarContainer-day-num-38">7</span>
+									<span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-38"></span>
+								</label>
+								<input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-39">
+								<label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-39" id="calendarContainer-day-39">
+									<span class="cjslib-day-num" id="calendarContainer-day-num-39">8</span>
+									<span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-39"></span>
+								</label>
+								<input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-40">
+								<label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-40" id="calendarContainer-day-40">
+									<span class="cjslib-day-num" id="calendarContainer-day-num-40">9</span>
+									<span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-40"></span>
+								</label>
+								<input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-41">
+								<label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-41" id="calendarContainer-day-41">
+									<span class="cjslib-day-num" id="calendarContainer-day-num-41">10</span>
+									<span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-41"></span>
+								</label>
+								<input class="cjslib-day-radios" type="radio" name="calendarContainer-day-radios" id="calendarContainer-day-radio-42">
+								<label class="calendarContainer cjslib-day cjslib-day-diluted" for="calendarContainer-day-radio-42" id="calendarContainer-day-42">
+									<span class="cjslib-day-num" id="calendarContainer-day-num-42">11</span>
+									<span class="cjslib-day-indicator cjslib-indicator-pos-top" id="calendarContainer-day-indicator-42"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+		<div id="organizerContainer">
+			<div class="cjslib-events cjslib-size-small">
+				<div class="cjslib-date" style="background-color: rgb(255, 160, 0); color: rgb(255, 236, 179);">
+					<div id="organizerContainer-day-back"><svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+						<path fill="#ffecb3" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path>
+					</svg>
+				</div>
+				<span id="organizerContainer-date">January 1, 2020</span>
+				<div id="organizerContainer-day-next">
+					<svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+						<path fill="#ffecb3" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="cjslib-rows" id="organizerContainer-list-container">
+				<ol class="cjslib-list" id="organizerContainer-list">
+					<div class="cjslib-list-placeholder">
+						<button style="width: calc(100% - 16px); background-color: #E6E6E6; border-radius: 6px; margin: 8px; border: none; padding: 12px 0px; cursor: pointer;"><a href="https://www.udemy.com/course/draft/425526/learn/lecture/2440488#overview">Add New Event</button>
+					</div>
+				</ol>
+				<ol class="cjslib-list" id="organizerContainer-history"></ol>
+			</div>
+		</div>
+	</div>
+		<script src="../calendarorganizer.min.js"></script>
+		<script>
+			"use strict";
+
+			// function that creates dummy data for demonstration
+			function createDummyData() {
+				var date = new Date();
+				var data = {};
+
+				for (var i = 0; i < 10; i++) {
+					data[date.getFullYear() + i] = {};
+
+					for (var j = 0; j < 12; j++) {
+						data[date.getFullYear() + i][j + 1] = {};
+
+						for (var k = 0; k < Math.ceil(Math.random() * 10); k++) {
+							var l = Math.ceil(Math.random() * 28);
+
+							try {
+								data[date.getFullYear() + i][j + 1][l].push({
+									startTime: "10:00",
+									endTime: "11:00",
+									text: "Some Event Here"
+								});
+							} catch (e) {
+								data[date.getFullYear() + i][j + 1][l] = [];
+								data[date.getFullYear() + i][j + 1][l].push({
+									startTime: "10:00",
+									endTime: "12:00",
+									text: "Some Event Here"
+								});
+							}
+						}
+					}
+				}
+
+				return data;
+			}
+
+			// creating the dummy static data
+			var data = createDummyData();
+
+			// initializing a new calendar object, that will use an html container to create itself
+			var calendar = new Calendar("calendarContainer", // id of html container for calendar
+				"small", // size of calendar, can be small | medium | large
+				[
+					"Wednesday", // left most day of calendar labels
+					3 // maximum length of the calendar labels
+				], [
+					"#ffc107", // primary color
+					"#ffa000", // primary dark color
+					"#ffffff", // text color
+					"#ffecb3" // text dark color
+				],
+				{
+					// placeholder: "" // Removes Organizer's Placeholder
+					placeholder: "<button style='width: calc(100% - 16px); background-color: #E6E6E6; border-radius: 6px; margin: 8px; border: none; padding: 12px 0px; cursor: pointer;'>Add New Event</button>",
+					indicator: true,
+					indicator_type: 0, // indicator type, can be 0 (not numeric) | 1 (numeric)
+					indicator_pos: "top" // indicator position, can be top | bottom
+				}
+			);
+
+			// initializing a new organizer object, that will use an html container to create itself
+			var organizer = new Organizer("organizerContainer", // id of html container for calendar
+				calendar, // defining the calendar that the organizer is related to
+				data // giving the organizer the static data that should be displayed
+			);
+
+		</script>
+
+
+
+</body>
+</html>

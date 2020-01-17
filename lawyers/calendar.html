@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS DIY Calendar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- step 4 -->
+<!--next: using date object and getters, apply a class="today" based on cell ID -->
+<!-- use date to call relevant month on initialise -->
+<link rel="stylesheet" href="calendar.css">
+
+<script src="calendar.js"></script>
+</head>
+
+<!--lighter html with modal and context clicks-->
+<body onload="initCalendarGrid(FEB, 4)">
+<h2>Calendar Against Living Miserably</h2>
+<div class="days">Sun</div>
+<div class="days">Mon</div>
+<div class="days">Tue</div>
+<div class="days">Wed</div>
+<div class="days">Thu</div>
+<div class="days">Fri</div>
+<div class="days">Sat</div>
+
+
+<footer id="populateGrid"></footer>
+
+</body>
+</html>
