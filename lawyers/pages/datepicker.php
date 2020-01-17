@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
- 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,6 +12,33 @@
     <link rel="stylesheet" href="../assets/libs/css/style.css">
     <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="../assets/vendor/datepicker/tempusdominus-bootstrap-4.css" />
+    <meta charset="utf-8">
+    <title>Admin-Petition </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/locale/nl.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+    .datepicker,
+.timepicker,
+.datetimepicker {
+.form-control {
+  background: #fff;
+}
+}
+</style>
 </head>
 
 <body>
@@ -23,7 +50,7 @@
         <!-- navbar -->
         <!-- ============================================================== -->
          <div class="dashboard-header">
-            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top" style="margin-top:-60px;">
                 <a class="navbar-brand" href="../index.html">Concept</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -138,7 +165,7 @@ John Abraham</h5>
         <!-- ============================================================== -->
         <!-- left sidebar -->
         <!-- ============================================================== -->
-        <div class="nav-left-sidebar sidebar-dark">
+        <div class="nav-left-sidebar sidebar-dark absolute">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -438,7 +465,7 @@ John Abraham</h5>
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header" id="top">
-                                <h2 class="pageheader-title">Datepicker </h2>
+                                <h2 class="pageheader-title" style="margin-top:-50px;">Datepicker </h2>
                                 <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
                                 <div class="page-breadcrumb">
                                     <nav aria-label="breadcrumb">
@@ -459,121 +486,66 @@ John Abraham</h5>
                     <!-- datepicker -->
                     <!-- ============================================================== -->
                     <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
                             <div class="card">
-                                <h5 class="card-header">DatePicker</h5>
+                                <h4 class="card-header">DatePicker</h4>
                                 <div class="card-body">
-                                    <h5>Basic</h5>
+                                  <br><br>
+                                  <form>
+                                  <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label for="petition-no">Petition No.</label>
+                                      <input type="number" class="form-control" name="petition-no" id="petition-no" placeholder="Petition No." required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                      <label for="petition-name">Petition Name</label>
+                                      <input type="text" class="form-control" name="petition-name" id="petition-name" placeholder="Petition Name" required>
+                                    </div>
+                                  </div>
+                                  <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                      <label for="court-room">Court Room</label>
+                                      <input type="number" name="court-room" class="form-control" id="inputCity" >
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                      <label for="Add Judge">Add Judge</label><br>
+                                      <select id="add-judge" name="add-judge" style="padding-right:50px;height:35px;">
+                                        <option value="judge1">judge1</option>
+                                        <option value="judge2">judge2</option>
+                                        <option value="judge3">judge3</option>
+                                        <option value="judge4">judge4</option>
+                                        <option value="judge5">judge5</option>
+                                        <option value="judge6">judge6</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <br>
+                                    <h5>Date</h5>
                                     <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+                                        <div class="input-group date" id="datetimepicker1"  data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" name="date" data-target="#datetimepicker1" />
                                             <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-body border-top">
-                                    <h5>Time Only</h5>
+                                    <h5>Time</h5>
                                     <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" />
-                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body border-top">
-                                    <h5>Using Locales</h5>
-                                    <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" />
+                                        <div class="input-group date" id="datetimepicker3"  data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" name="time" data-target="#datetimepicker3" />
                                             <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><i class="far fa-clock"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-body border-top">
-                                    <h5>Date Only</h5>
-                                    <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
-                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body border-top">
-                                    <h5>No Icon</h5>
-                                    <input type="text" class="form-control datetimepicker-input" id="datetimepicker5" data-toggle="datetimepicker" data-target="#datetimepicker5" />
-                                </div>
-                                <div class="card-body border-top">
-                                    <h5>Enabled/Disabled Dates</h5>
-                                    <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker6" />
-                                            <div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body border-top">
-                                    <h5>Linked Pickers</h5>
-                                    <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7" />
-                                            <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker8" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker8" />
-                                            <div class="input-group-append" data-target="#datetimepicker8" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body border-top">
-                                    <h5>View Mode</h5>
-                                    <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker10" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker10" />
-                                            <div class="input-group-append" data-target="#datetimepicker10" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body border-top">
-                                    <h5>Min View Mode</h5>
-                                    <div class="form-group">
-                                        <div class="input-group date" id="datetimepicker11" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker11" />
-                                            <div class="input-group-append" data-target="#datetimepicker11" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar-alt"></i></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body border-top">
-                                    <h5>Inline</h5>
-                                    <div class="form-group">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div id="datetimepicker13"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <button type="submit" class="btn btn-primary" name="sub" style="width:200px;">Sign Petition</button>
+
+<br><br>
                             </div>
                         </div>
                     </div>
@@ -619,5 +591,5 @@ John Abraham</h5>
     <script src="../assets/vendor/datepicker/datepicker.js"></script>
 </body>
 
- 
+
 </html>

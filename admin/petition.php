@@ -42,12 +42,13 @@
       <input type="text" class="form-control" id="petition-name" placeholder="Petition Name" required>
     </div>
   </div>
-  <br>
   <div class="form-row">
     <div class="form-group col-md-2">
       <label for="court-room">Court Room</label>
       <input type="number" class="form-control" id="inputCity" >
     </div>
+    </div>
+    	</div><br>
     <!--div class="form-group col-md-2">
       <div class="md-form">
         <label for="input_starttime">Start time</label>
@@ -60,21 +61,17 @@
       <input placeholder="Selected time" type="text" id="input_endtime" class="form-control timepicker">
       </div>
     </div-->
-  </div><br><br>
 
-	<div class="row">
+
+
 		<div class="col-xs-4">
-			<h3>Date</h3>
 			<div class="form-group">
-				<div class="input-group datepicker">
-					<input type="text" class="form-control" readonly>
+					<!--input type="text" class="form-control" readonly>
 					<span class="input-group-addon">
 						<span class="fa fa-calendar"></span>
-					</span>
+					</span-->
 				</div>
 			</div>
-		</div>
-	</div>
 
 <br>
 <input id="timepicker" width="276" />
